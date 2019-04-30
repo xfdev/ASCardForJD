@@ -32,11 +32,17 @@
         var num = table[1].rows[1].cells[0].innerHTML;
         num = num.replace(/\s+/g,"");// 去除空格
         var money = "0";
-        if (num == "11170365589") {money = "50"}
-        if (num == "11183343342") {money = "100"}
-        if (num == "11183368356") {money = "200"}
-        if (num == "11183445154") {money = "500"}
-        if (num == "13138170874") {money = "1000"}
+        if (num == "11170365589") {
+            money = "50";
+        } else if (num == "11183343342") {
+            money = "100";
+        } else if (num == "11183368356") {
+            money = "200";
+        } else if (num == "11183445154") {
+            money = "500";
+        } else if (num == "13138170874") {
+            money = "1000";
+        }
 
         // 处理表格
         var spans = table[0].getElementsByTagName("span");
