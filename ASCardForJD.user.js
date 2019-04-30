@@ -19,6 +19,7 @@
         textarea.style.margin = "0px 0px 10px";
         textarea.style.width = "370px";
         textarea.style.height = "100px";
+        textarea.style.overflowY = "auto";
         orderinfo.parentNode.insertBefore(textarea, orderinfo);
 
         var copyLabel = document.createElement('p');
