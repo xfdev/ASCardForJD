@@ -1,9 +1,9 @@
 // ==UserScript==
-// @name         ASCardForJD
-// @namespace    http://tampermonkey.net/
-// @version      0.0.1
+// @name         苹果卡详情页
+// @namespace    https://github.com/xfdev/GCAForJD
+// @version      0.0.1(190524)
 // @description  try to take over the world!
-// @author       You
+// @author       xfdev
 // @match        https://card.jd.com/*
 // @grant        none
 // ==/UserScript==

@@ -1,9 +1,9 @@
 // ==UserScript==
-// @name         GCAForJDList
-// @namespace    http://tampermonkey.net/
-// @version      0.1
+// @name         苹果卡列表页
+// @namespace    https://github.com/xfdev/GCAForJD
+// @version      0.0.1(190524)
 // @description  try to take over the world!
-// @author       You
+// @author       xfdev
 // @match        https://order.jd.com/center/list.action?t=34-62&d=1&s=4096
 // @grant        GM_xmlhttpRequest
 // @grant        GM_download
@@ -96,7 +96,8 @@
             url: url,
             onload: function(res) {
                 if (res.status == 200) {
-                    this.innerHTML = "请求成功";
+                	document.getElementById("fr_requestBtn-" + orderid).innerHTML = "请求成功";
+
                     var regex = new RegExp("(?<=copyToClipboard\\(\\').*(?=\\'\\);)", "g");// 这里要用双反斜杠，要不然会直接过滤掉不被正则接收
                     var htmlText = res.responseText;
                     var arr = htmlText.match(regex);
