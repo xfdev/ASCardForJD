@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         考拉-自动提交-订单确认页
 // @namespace    http://tampermonkey.net/
-// @version      0.2.1
+// @version      0.2.2
 // @description  try to take over the world!
 // @author       You
 // @match        https://buy.kaola.com/order/confirm.html?from=detailfp
