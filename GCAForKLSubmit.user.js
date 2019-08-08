@@ -1,7 +1,7 @@
 // ==UserScript==
-// @name         考拉自动提交-订单确认页
+// @name         考拉-自动提交-订单确认页
 // @namespace    http://tampermonkey.net/
-// @version      0.1
+// @version      0.2
 // @description  try to take over the world!
 // @author       You
 // @match        https://buy.kaola.com/order/confirm.html?from=detailfp
@@ -24,10 +24,23 @@
         var money = document.getElementsByClassName("j-total")[0].innerText;
         if (money <= parValue*num*0.9) {
         	// 提交
-        	document.getElementById("submitbtn").click();
+            var sh;
+            var index = 0;
+            sh=setInterval('autoclick()', 200);
+            function autoclick(){
+                document.getElementById("submitbtn").click();
+                index++;
+                if (index >= 5) {
+                    clearInterval(sh);
+                    window.location.reload();
+                }
+                var err = document.getElementsByClassName("u-btn j-tag");
+                if (err) {
+                    err[0].click();
+                }
+            }
         	console.log("已提交");
         } else {
-        	console.log("没打折，去刷新："+money);
             //setTimeout('window.location.reload()', 500);
             window.location.reload();
         }
