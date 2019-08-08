@@ -17,7 +17,7 @@
     var sh;
     var index;
     var autoMax = 10;// 自动提交最大次数
-    var timeInterval = 1000;// 时间间隔
+    var timeInterval = 100;// 时间间隔
 
     // 金额元素
     var moneyLabel = document.getElementsByClassName("j-total")[0];
@@ -34,7 +34,6 @@
             fr_submit();
             console.log("已提交");
         } else {
-            //setTimeout('window.location.reload()', 500);
             window.location.reload();
         }
     });
@@ -43,7 +42,8 @@
     // 提交
     function fr_submit() {
         index = 0;
-        sh = setInterval('fr_autoclick()', timeInterval);
+        fr_autoclick();
+        sh = window.setInterval(fr_autoclick, timeInterval);
     }
     // 自动点击
     function fr_autoclick() {
@@ -55,8 +55,9 @@
                 window.location.reload();
             }
             var err = document.getElementsByClassName("u-btn j-tag");
-            if (err) {
+            if (err.length) {
                 err[0].click();
+                console.log("确定窗口");
             }
         }
 })();
