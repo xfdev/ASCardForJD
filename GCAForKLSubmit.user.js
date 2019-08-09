@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         考拉-自动提交-订单确认页
 // @namespace    http://tampermonkey.net/
-// @version      0.3.2
+// @version      0.3.3
 // @description  try to take over the world!
 // @author       You
 // @match        https://buy.kaola.com/order/confirm.html?from=detailfp
@@ -16,7 +16,7 @@
     // 全局变量
     var sh;
     var index;
-    var autoMax = 10;// 自动提交最大次数
+    var autoMax = 5;// 自动提交最大次数
     var timeInterval = 100;// 时间间隔
 
     // 金额元素
