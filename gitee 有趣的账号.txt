@@ -1,0 +1,55 @@
+gitee 可注册的 有趣的账号
+
+afn AFNetwork
+eue 首位
+cvg 离得近
+zvm 位置 
+
+程序处理
+
+
+
+俩字母相同的
+eew 可以
+
+            NSString *a = [s substringToIndex:1];
+            NSString *b = [s substringWithRange:NSMakeRange(1, 1)];
+            NSString *c = [s substringFromIndex:2];
+            
+            if ([a isEqualToString:b] || [b isEqualToString:c] || [a isEqualToString:c]) {
+                NSLog(@"s = %@",s);
+            }
+
+
+s = ebe,
+s = eew,
+s = ejj,
+s = eue,
+----------s = grr,
+s = gvg,
+s = igi,
+s = mtm,
+s = ndn,
+s = ngn,
+s = nhn,
+s = npn,
+s = nrn,
+s = rbr,
+s = rfr, code修改
+s = rir,
+s = rkr,
+s = rlr,
+s = uau,
+s = ucu,
+s = ueu,
+s = uju,
+s = uqq,
+s = uru,
+s = usu,
+s = uwu,
+s = vgv,
+s = vjv,
+s = vzv,
+s = yey, 注册
+
+

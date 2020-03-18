@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         考拉 - 抢苹果卡券
+// @name         考拉 - 抢苹果卡券（模拟点击）
 // @namespace    http://tampermonkey.net/
 // @version      0.1
 // @description  try to take over the world!
